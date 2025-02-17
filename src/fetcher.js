@@ -1,4 +1,6 @@
 import { Octokit } from "https://cdn.skypack.dev/@octokit/rest";
+import { inject } from "@vercel/analytics";
+inject();
 
 document.addEventListener("DOMContentLoaded", () => {
     const repoInput = document.getElementById("repoInput");
